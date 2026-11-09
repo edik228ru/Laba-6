@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Страница 3 - Вариант 8</title>
+    <style>
+        body { 
+        font-family: Arial, sans-serif; 
+        margin: 30px; 
+        background-color: white; 
+        text-align: center; 
+        }
+        h2 { 
+        margin-bottom: 30px; 
+        }
+        .form-container { 
+        display: inline-block; 
+        text-align: left; 
+        margin-bottom: 30px; 
+        }
+        .form-container input[type="text"] { 
+        width: 200px; 
+        margin-bottom: 15px; 
+        padding: 3px; 
+        }
+        .form-container label { 
+        display: block; 
+        margin-bottom: 5px; 
+        }
+        .form-container input[type="password"] { 
+        width: 150px; 
+        margin: 15px 0; 
+        padding: 3px; 
+        }
+        .form-container select { 
+        margin-bottom: 15px; 
+        padding: 2px; 
+        }
+        .form-container button { 
+        margin-right: 5px; 
+        }
+
+        .flag-container {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #888;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .red-circle {
+            width: 100px;
+            height: 100px;
+            background-color: #dc3545;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Вариант 8</h2>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            
+            <input type="text" value="Новосибирск">
+            
+            <label><input type="radio" name="city" value="omsk"> Омск</label>
+            <label><input type="radio" name="city" value="nsk" checked> Новосибирск</label>
+            <label><input type="radio" name="city" value="tomsk"> Томск</label>
+            
+            <input type="password" value="123456">
+            
+            <select name="city_select">
+                <option value="omsk">Омск</option>
+                <option value="nsk" selected>Новосибирск</option>
+                <option value="tomsk">Томск</option>
+            </select>
+            
+            <br>
+            
+            <button type="submit">Отправить</button>
+            <button type="reset">Сбросить</button>
+            
+        </form>
+    </div>
+
+    <div class="flag-container">
+        <div class="red-circle"></div>
+    </div>
+
+    <br><br>
+    <a href="index.html">На главную страницу</a>
+
+</body>
+</html>
